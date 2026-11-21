@@ -1,0 +1,13 @@
+use gridcover;
+
+fn main() {
+    let box = [-1, -4, 4, 0];
+    let cell = 2.0;
+    let result = gridcover_cells(box, cell);
+    if len(result) == 0 { println!("invalid"); return; }
+    let mut i = 0;
+    while i < len(result) {
+        println!(at(result, i));
+        i += 1;
+    }
+}
